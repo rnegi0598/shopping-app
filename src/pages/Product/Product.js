@@ -4,22 +4,20 @@ import "./Product.scss";
 import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import BalanceIcon from "@mui/icons-material/Balance";
-// import useFetch from "../../hooks/useFetch";
 import { useParams } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
-// import { addToCart } from "../../redux/cartReducer";
 import { addToCart } from "../../features/Products/productsSlice";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Product = () => {
   const id = useParams().id;
   const dispatch = useDispatch();
   const [selectedImg, setSelectedImg] = useState("img");
   const [quantity, setQuantity] = useState(1);
-  const products=useSelector((state)=>state.products.products);
-  const data=products.find((product)=>product.id===parseInt(id));
- 
-  // console.log(data);
- 
+  const products = useSelector((state) => state.products.products);
+  const data = products.find((product) => product.id === parseInt(id));
+
   return (
     <div className="product">
       {false ? (
@@ -41,7 +39,7 @@ const Product = () => {
             </div>
             <div className="mainImg">
               <img
-                src={selectedImg==='img'?data.img:data.img2}
+                src={selectedImg === "img" ? data.img : data.img2}
                 alt="main img"
               />
             </div>
@@ -63,7 +61,11 @@ const Product = () => {
             </div>
             <button
               className="add"
-             onClick={()=>{dispatch(addToCart({...data,qty:quantity}))}}
+              onClick={() => {
+                dispatch(addToCart({ ...data, qty: quantity }));
+                toast.success('Product Added successfully',{ autoClose: 2000 ,position: "bottom-right",theme: "dark"});
+                setQuantity(1);
+              }}
             >
               <AddShoppingCartIcon /> ADD TO CART
             </button>

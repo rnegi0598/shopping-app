@@ -26,8 +26,7 @@ const Footer = () => {
           <span>
             Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do
             eiusmod tempor incididunt ut labore et dolore. Lorem ipsum dolor sit
-            amet conse ctetur adipisicing elit, seddo eiusmod tempor incididunt
-            ut labore etdolore.
+            amet conse .
           </span>
         </div>
         <div className="item">
@@ -35,8 +34,7 @@ const Footer = () => {
           <span>
             Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do
             eiusmod tempor incididunt ut labore et dolore. Lorem ipsum dolor sit
-            amet conse ctetur adipisicing elit, seddo eiusmod tempor incididunt
-            ut labore etdolore.
+            amet conse ctetur.
           </span>
         </div>
       </div>

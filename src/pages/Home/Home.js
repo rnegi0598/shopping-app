@@ -3,8 +3,8 @@ import Slider from '../../features/Slider/Slider'
 import FeaturedProducts from '../../features/FeaturedProducts/FeaturedProducts'
 import Categories from '../../features/Categories/Categories'
 import Contact from '../../features/Contact/Contact'
+import './Home.scss'
 
-import "./Home.scss"
 const Home = () => {
   return (
     <div className='home'>

@@ -1,12 +1,15 @@
 .navbar {
     height: 80px;
-  
+    background-color:  	#D8D8D8;
+    
     .wrapper {
+      height: 100%;
       padding: 10px 30px;
       display: flex;
       align-items: center;
       justify-content: space-between;
-  
+      
+      
       .item {
         display: flex;
         align-items: center;
@@ -21,6 +24,9 @@
         display: flex;
         align-items: center;
         gap: 25px;
+        @media screen  and (max-width:900px){
+          display: none;
+        }
       }
       .center {
         font-size: 30px;
@@ -30,7 +36,12 @@
         display: flex;
         align-items: center;
         gap: 25px;
-  
+        
+        @media screen  and (max-width:900px){
+          .item{
+            display: none;
+          }
+        }
         .icons {
           display: flex;
           gap: 15px;
@@ -54,9 +65,11 @@
               align-items: center;
               justify-content: center;
             }
+
           }
         }
       }
+      
     }
   }
   

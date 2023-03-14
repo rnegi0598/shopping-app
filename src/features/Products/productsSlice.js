@@ -2,12 +2,12 @@ import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 import axios from "axios";
 
 
-const API_URL  ="http://localhost:4000/products"
-// const API_URL="https://my-json-server.typicode.com/rnegi0598/json-server/products";
+// const API_URL  ="http://localhost:4000/products"
+const API_URL="https://my-json-server.typicode.com/rnegi0598/e-commerce-json-server/products/";
 
 const initialState = {
   products:[],
-  cart:[],
+  cart:JSON.parse(localStorage.getItem('cartItem'))||[],
   status: 'idle',//'idle' | 'loading' | 'succeeded' | 'failed'
   error:null,
 };
@@ -35,7 +35,7 @@ const productsSlice=createSlice({
         state.cart.push(action.payload);
       }
       
-
+      localStorage.setItem('cartItem',JSON.stringify(state.cart));
     },
     deleteFromCart:(state,action)=>{
       if(action.payload.qty===1){
@@ -51,10 +51,12 @@ const productsSlice=createSlice({
             }
         })
       }
+      localStorage.setItem('cartItem',JSON.stringify(state.cart));
 
     },
     resetCart:(state)=>{
       state.cart=[];
+      localStorage.clear();
     }
 
   },

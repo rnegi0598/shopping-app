@@ -21,6 +21,15 @@
       gap: 10px;
       position: relative;
       overflow: hidden;
+      
+      img{
+        transition: all 1s ease ;
+        opacity: 0.9;
+        &:hover{
+          opacity: 1;
+          scale: 1.4;
+        }
+      }
   
       button{
         position: absolute;
@@ -33,11 +42,18 @@
         left: 0;
         right: 0;
         margin: auto;
-        cursor: pointer;
         border: none;
         background-color: white;
         text-transform: uppercase;
         font-weight: 500;
+        a{
+          cursor: pointer;
+          
+        }
+        
+        &:hover{
+          background-color:rgb(9, 121, 173);
+        }
       }
   
       img{
