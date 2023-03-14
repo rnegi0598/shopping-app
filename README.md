@@ -1,8 +1,47 @@
-# Getting Started with Create React App
+# E-Commerce Website
+This is an e-commerce website built using ReactJS. The website allows users to browse through products, add products to their cart, delete products from their cart and reset the cart .  
+[Website Deployment Link](https://shopping-1booi126x-rnegi0598.vercel.app/)
+
+## Screenshots
+### Home Page
+![Screenshot from 2023-03-14 15-31-01](https://user-images.githubusercontent.com/45715802/224968858-4eb9625b-6780-4d35-bcde-93f1d7cad6e3.png)
+![Screenshot from 2023-03-14 15-31-13](https://user-images.githubusercontent.com/45715802/224968886-aa6ead64-9388-4955-ac10-4e31e23aa5a5.png)
+![Screenshot from 2023-03-14 15-31-27](https://user-images.githubusercontent.com/45715802/224968920-bf4282ae-4d7f-4446-bfad-e4dc7df9dd83.png)
+![Screenshot from 2023-03-14 15-31-37](https://user-images.githubusercontent.com/45715802/224968961-2bac85a8-e5ff-45d9-b9d6-d5dd012c1ead.png)
+### Product Page
+![Screenshot from 2023-03-14 15-32-56](https://user-images.githubusercontent.com/45715802/224968991-7c17d99f-a345-4b66-9834-ab9d6efeb9a2.png)
+### Add To Cart
+![Screenshot from 2023-03-14 15-33-31](https://user-images.githubusercontent.com/45715802/224969028-ed259e70-6ac5-47fd-b1bb-4069287b7270.png)
+
+
+
+
+## Features
+-  Browse through products
+- Add products to the cart
+- Update the quantity of products in the cart
+- Reset the cart
+
+## Technologies Used
+- ReactJS
+- [Redux Toolkit](https://redux-toolkit.js.org/) for state management
+- React Router for routing
+- Axios for making API calls
+- scss for styling
+- [Material Icons](https://mui.com/material-ui/material-icons/) for icons
+
+## Installation
+- Clone the repository.
+- Run `npm install` to install the dependencies.
+- Run `npm start` to start the development server.
+
+
+---
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+### Available Scripts
 
 In the project directory, you can run:
 
