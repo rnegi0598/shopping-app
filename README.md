@@ -1,5 +1,5 @@
 # E-Commerce Website
-This is an e-commerce website built using ReactJS. The website allows users to browse through products, add products to their cart, delete products from their cart and reset the cart .  
+This is an e-commerce website built using ReactJS as the front-end framework and [My JSON Server](https://my-json-server.typicode.com/) as the back-end server. The website allows users to browse through products, add products to their cart, delete products from their cart and reset the cart .  
 [Website Deployment Link](https://shopping-1booi126x-rnegi0598.vercel.app/)
 
 ## Screenshots
@@ -17,10 +17,10 @@ This is an e-commerce website built using ReactJS. The website allows users to b
 
 
 ## Features
--  Browse through products
-- Add products to the cart
-- Update the quantity of products in the cart
-- Reset the cart
+- Home Page - Displays the featured products , product categories and trending products.
+- Product Details Page - Displaying the details of a selected product and allowing the user to add it to their cart.
+- Products Page - Displays the products belonging to the category cliked by the user.
+- Cart Page - Displaying the items added to the cart, allowing the user to modify or remove them, and providing a checkout button.
 
 ## Technologies Used
 - ReactJS
